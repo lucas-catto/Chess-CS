@@ -1,0 +1,86 @@
+[
+    {
+        "Number"   : "1",
+        "Name"     : "Bobby Fischer",
+        "YearBorn" : "1943",
+        "YearDied" : "2008",
+        "Activity" : [""]
+    },
+    {
+        "Number"   : "2",
+        "Name"     : "Garry Kasparov",
+        "YearBorn" : "1963",
+        "YearDied" : "Alive",
+        "Activity" : [""]
+    },
+    {
+        "Number"   : "3",
+        "Name"     : "Anatoly Karpov",
+        "YearBorn" : "1951",
+        "YearDied" : "Alive",
+        "Activity" : [""]
+    },
+    {
+        "Number"   : "4",
+        "Name"     : "Mikhail Tal",
+        "YearBorn" : "1936",
+        "YearDied" : "1992",
+        "Activity" : [""]
+    },
+    {
+        "Number"   : "5",
+        "Name"     : "Magnus Carlsen",
+        "YearBorn" : "1990",
+        "YearDied" : "Alive",
+        "Activity" : [""]
+    },
+    {
+        "Number"   : "6",
+        "Name"     : "Viswanathan Anand",
+        "YearBorn" : "1969",
+        "YearDied" : "Alive",
+        "Activity" : [""]
+    },
+    {
+        "Number"   : "7",
+        "Name"     : "José Raúl Capablanca",
+        "YearBorn" : "1888",
+        "YearDied" : "1942",
+        "Activity" : [""]
+    },
+    {
+        "Number"   : "8",
+        "Name"     : "Boris Spassky",
+        "YearBorn" : "1937",
+        "YearDied" : "Alive",
+        "Activity" : [""]
+    },
+    {
+        "Number"   : "9",
+        "Name"     : "Vladimir Kramnik",
+        "YearBorn" : "1975",
+        "YearDied" : "Alive",
+        "Activity" : [""]
+    },
+    {
+        "Number"   : "10",
+        "Name"     : "Vassily Ivanchuk",
+        "YearBorn" : "1969",
+        "YearDied" : "Alive",
+        "Activity" : [""]
+    },
+    {
+        "Number"   : "11",
+        "Name"     : "Vassily Ivanchuk",
+        "YearBorn" : "1987",
+        "YearDied" : "Alive",
+        "Activity" : [""]
+    },
+    {
+        "Number"   : "12",
+        "Name"     : "Vassily Ivanchuk",
+        "YearBorn" : "1976",
+        "YearDied" : "Alive",
+        "Activity" : [""]
+    }
+]

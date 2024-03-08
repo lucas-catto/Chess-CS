@@ -1,0 +1,15 @@
+[
+    { "Year" : "1900", "Color" : "#5B3D29" },
+    { "Year" : "1910", "Color" : "#1E3B71" },
+    { "Year" : "1920", "Color" : "#D4AF37" },
+    { "Year" : "1930", "Color" : "#4A5D23" },
+    { "Year" : "1940", "Color" : "#808080" },
+    { "Year" : "1950", "Color" : "#FFC0CB" },
+    { "Year" : "1960", "Color" : "#FFA500" },
+    { "Year" : "1970", "Color" : "#8B4513" },
+    { "Year" : "1980", "Color" : "#8B4513" },
+    { "Year" : "1990", "Color" : "#1560BD" },
+    { "Year" : "2000", "Color" : "#C0C0C0" },
+    { "Year" : "2010", "Color" : "#98FB98" },
+    { "Year" : "2020", "Color" : "#0F4C81" }
+]
