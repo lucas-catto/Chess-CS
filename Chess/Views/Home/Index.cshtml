@@ -1,8 +1,33 @@
-﻿@{
+﻿
+@model List<Players>
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<head>
+     <link rel="stylesheet" href="~/css/Index/index.css">
+</head>
+
+@foreach (var player in Model) {
+
+    @if (player.Player_Id % 2 != 0) {
+
+        <div class="card black">
+            <p>@player.Name</p>
+            <p>@player.YearBorn</p>
+            <p>@player.YearDied</p>
+        </div>
+    }
+    else {
+        <div class="card white">
+            <p>@player.Name</p>
+            <p>@player.YearBorn</p>
+            <p>@player.YearDied</p>
+        </div>
+    }
+
+    @* foreach (var year in player.Activity) {
+        <p></p>
+    } *@
+}

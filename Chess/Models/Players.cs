@@ -3,7 +3,7 @@ namespace Chess.Models;
 
 public class Players {
 
-    public int Number { get; set; }
+    public int Player_Id { get; set; }
     public string Name { get; set; }    
     public string YearBorn { get; set; }    
     public string YearDied { get; set; }    
