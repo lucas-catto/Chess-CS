@@ -19,6 +19,7 @@
     --defaultBlack:   rgb(0, 0, 0);
     --defaultRed:     rgb(255, 0, 0);
     --defaultGray:    rgb(132, 132, 132);
+    --defaultBrown:   #8B4513;
 }
 
 html, body {
@@ -29,6 +30,7 @@ html, body {
 body {
     display:          flex;
     flex-direction:   column;
+    background-color: var(--defaultBrown);
 }
 
 main { flex: 1; }
@@ -43,12 +45,11 @@ header {
     padding:          16px;
     border-bottom:    2px solid var(--defaultBlack);
     justify-content:  center;
-    background-color: var(--defaultGray);
 }
 
 header a {
     font-size:        36px;
-    color:            var(--defaultBlack);
+    color:            var(--defaultWhite);
 }
 
 footer {
@@ -56,8 +57,7 @@ footer {
     text-align:       center;
     justify-content:  center;
     border-top:       2px solid var(--defaultBlack);
-    background-color: var(--defaultGray);
 }
 
 footer p
-{ color: var(--defaultBlack); }
+{ color: var(--defaultWhite); }

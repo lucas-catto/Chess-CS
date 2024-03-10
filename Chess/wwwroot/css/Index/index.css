@@ -4,15 +4,46 @@ main {
     flex-wrap:        wrap;
     justify-content:  center;
     gap:              15px;
-    background-color: var(--defaultGray);
 }
 
 .card {
+    padding:          0 0 5px 0;
     width:            100%;
     max-width:        400px;
     height:           auto;
     border-radius:    8px;
+    overflow:         hidden;
 }
 
-.white { border: 3px solid var(--defaultWhite); }
-.black { border: 3px solid var(--defaultBlack); }
+.card h2 {
+    padding:          4px;
+    text-align:       center;
+}
+
+.card .dates {
+    display:          flex;
+    justify-content:  center;
+}
+
+.card .dates p {
+    margin: 0 5px;
+}
+
+.card .image {
+    width:            100%;
+    max-width:        100%;
+    height:           200px;
+    background-color: pink;
+}
+
+.white {
+    border:           3px solid var(--defaultWhite);
+    columns:          var(--defaultBlack);
+    background-color: var(--defaultWhite);
+}
+
+.black {
+    border:           3px solid var(--defaultBlack);
+    color:            var(--defaultWhite);
+    background-color: var(--defaultBlack);
+}

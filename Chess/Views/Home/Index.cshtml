@@ -14,16 +14,28 @@
     @if (player.Player_Id % 2 != 0) {
 
         <div class="card black">
-            <p>@player.Name</p>
-            <p>@player.YearBorn</p>
-            <p>@player.YearDied</p>
+            <div class="image"></div>
+
+            <h2>@player.Name</h2>
+
+            <div class="dates">
+                <p>@player.YearBorn</p>
+                <p>-</p>
+                <p>@player.YearDied</p>
+            </div>
         </div>
     }
     else {
         <div class="card white">
-            <p>@player.Name</p>
-            <p>@player.YearBorn</p>
-            <p>@player.YearDied</p>
+            <div class="image"></div>
+
+            <h2>@player.Name</h2>
+            
+            <div class="dates">
+                <p>@player.YearBorn</p>
+                <p>-</p>
+                <p>@player.YearDied</p>
+            </div>
         </div>
     }
 
