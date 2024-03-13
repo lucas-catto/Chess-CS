@@ -8,6 +8,7 @@ public class Players {
     public string YearBorn { get; set; }    
     public string YearDied { get; set; }    
     public List<string> Activity { get; set; }
+    public string Image { get; set; }
 
     public Players () {
         Activity = new List<string>();
