@@ -3,45 +3,55 @@
 
 @{
     ViewData["Title"] = "Home Page";
+
+    var years = (List<Years>)ViewData["years"];
 }
 
 <head>
      <link rel="stylesheet" href="~/css/Index/index.css">
 </head>
 
-@foreach (var player in Model) {
-
-    @if (player.Player_Id % 2 != 0) {
-
-        <div class="card black">
-            
-            <img src="~/@player.Image">
-
-            <h2>@player.Name</h2>
-
-            <div class="dates">
-                <p>@player.YearBorn</p>
-                <p>-</p>
-                <p>@player.YearDied</p>
-            </div>
-        </div>
+<section id="s1">
+    @foreach (var year in years) {
+        <p style="background-color:@year.Color;">@year.Year</p>
     }
-    else {
-        <div class="card white">
-            
-            <img src="~/@player.Image">
+</section>
 
-            <h2>@player.Name</h2>
-            
-            <div class="dates">
-                <p>@player.YearBorn</p>
-                <p>-</p>
-                <p>@player.YearDied</p>
+<section id="s2">
+    @foreach (var player in Model) {
+
+        @if (player.Player_Id % 2 != 0) {
+
+            <div class="card black">
+                
+                <img src="~/@player.Image">
+
+                <h2>@player.Name</h2>
+
+                <div class="dates">
+                    <p>@player.YearBorn</p>
+                    <p>-</p>
+                    <p>@player.YearDied</p>
+                </div>
             </div>
-        </div>
-    }
+        }
+        else {
+            <div class="card white">
+                
+                <img src="~/@player.Image">
 
-    @* foreach (var year in player.Activity) {
-        <p></p>
-    } *@
-}
+                <h2>@player.Name</h2>
+                
+                <div class="dates">
+                    <p>@player.YearBorn</p>
+                    <p>-</p>
+                    <p>@player.YearDied</p>
+                </div>
+            </div>
+        }
+
+        @* foreach (var year in player.Activity) {
+            <p></p>
+        } *@
+    }
+</section>

@@ -23,6 +23,16 @@ public class HomeController : Controller  {
             players = JsonSerializer.Deserialize<List<Players>>(data);
         }
 
+        List<Years> years = [];
+
+        using (StreamReader reader = new ("Data\\years.json")) {
+
+            string data = reader.ReadToEnd();
+            years = JsonSerializer.Deserialize<List<Years>>(data);
+        }
+
+        ViewData["years"] = years;
+
         return View(players);
     }
 
