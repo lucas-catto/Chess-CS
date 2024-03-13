@@ -37,7 +37,8 @@ main { flex: 1; }
 
 header,
 main,
-footer
+footer,
+section
 { display: flex; }
 
 
