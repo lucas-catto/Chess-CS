@@ -42,6 +42,10 @@
         <p>Year Born: @Model.Current.YearBorn</p>
         <p>Year Died: @Model.Current.YearDied</p>
 
-        @* <p>@Model.Current.Activity</p> => foreach*@
+        <div class="activity">
+            @foreach (var year in @Model.Current.Activity) {
+                <p>@year</p>
+            }
+        </div>
     </div>
 </section>

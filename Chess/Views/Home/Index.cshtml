@@ -34,6 +34,11 @@
                     <p>-</p>
                     <p>@player.YearDied</p>
                 </div>
+                <div class="activity">
+                    @foreach (var year in player.Activity) {
+                        <p>@year</p>
+                    }
+                </div>
             </div>
         }
         else {
@@ -47,6 +52,11 @@
                     <p>@player.YearBorn</p>
                     <p>-</p>
                     <p>@player.YearDied</p>
+                </div>
+                <div class="activity">
+                    @foreach (var year in player.Activity) {
+                        <p>@year</p>
+                    }
                 </div>
             </div>
         }
