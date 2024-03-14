@@ -1,0 +1,51 @@
+
+main {
+    flex-direction: column;
+}
+
+main #s1,
+main #s2 {
+    width:            100%;
+    max-width:        100%;
+    height:           auto;
+}
+
+main #s1 {
+    padding:          30px;
+    justify-content:  space-between;
+    color:            var(--defaultWhite);
+}
+
+main #s1 .buttons {
+    width:            100%;
+    max-width:        33.33%;
+    display:          flex;
+    justify-content:  center;
+    align-items:      center;
+    text-align:       center;
+}
+
+main #s1 a {
+    color:            var(--defaultWhite);
+}
+
+main #s2 {
+    justify-content:  center;
+    align-items:      center;
+    flex-grow:        1;
+}
+
+main #s2 img {
+    margin:           0 15px;
+    width:            100%;
+    max-width:        400px;
+    border-radius:    30px;
+    vertical-align:   middle;
+}
+
+main #s2 .data {
+    padding:          15px;
+    flex-direction:   column;
+    font-size:        17pt;
+    color:            var(--defaultWhite);
+}

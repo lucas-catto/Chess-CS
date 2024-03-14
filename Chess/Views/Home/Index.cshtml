@@ -23,7 +23,7 @@
 
         @if (player.Player_Id % 2 != 0) {
 
-            <div class="card black">
+            <div class="card black" onclick="window.location='/Home/Details/@player.Player_Id'">
                 
                 <img src="~/@player.Image">
 
@@ -37,7 +37,7 @@
             </div>
         }
         else {
-            <div class="card white">
+            <div class="card white" onclick="window.location='/Home/Details/@player.Player_Id'">
                 
                 <img src="~/@player.Image">
 

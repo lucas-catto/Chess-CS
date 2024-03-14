@@ -1,0 +1,47 @@
+﻿@model DetailsVM
+
+@{
+    ViewData["Title"] = Model.Current.Name;
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/Details/details.css">
+</head>
+
+<section id="s1">
+
+    <div class="buttons">
+        @if (Model.Previous != null) {
+            <a asp-action="Details" asp-route-id="@Model.Previous.Player_Id">
+                @Model.Previous.Player_Id.ToString("000") - @Model.Previous.Name
+            </a>
+        }
+    </div>
+
+    <div class="buttons">
+        <h1>
+            @Model.Current.Player_Id.ToString("000") - @Model.Current.Name
+        </h1>
+    </div>
+
+    <div class="buttons">
+        @if (@Model.Next != null) {
+            <a asp-action="Details" asp-route-id="@Model.Next.Player_Id">
+                @Model.Next.Player_Id.ToString("000") - @Model.Next.Name
+            </a>
+        }
+    </div>
+
+</section>
+<section id="s2">
+    <img src="~/@Model.Current.Image" alt="@Model.Current.Name">
+    
+    <div class="data">
+        <p>Id:        @Model.Current.Player_Id.ToString("000")</p>
+        <p>Name:      @Model.Current.Name</p>
+        <p>Year Born: @Model.Current.YearBorn</p>
+        <p>Year Died: @Model.Current.YearDied</p>
+
+        @* <p>@Model.Current.Activity</p> => foreach*@
+    </div>
+</section>
