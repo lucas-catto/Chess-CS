@@ -23,7 +23,7 @@
 
         @if (player.Player_Id % 2 != 0) {
 
-            <div class="card black" onclick="window.location='/Home/Details/@player.Player_Id'">
+            <div class="card black @String.Join(' ', player.Activity)" onclick="window.location='/Home/Details/@player.Player_Id'">
                 
                 <img src="~/@player.Image">
 
@@ -42,7 +42,7 @@
             </div>
         }
         else {
-            <div class="card white" onclick="window.location='/Home/Details/@player.Player_Id'">
+            <div class="card white @String.Join(' ', player.Activity)" onclick="window.location='/Home/Details/@player.Player_Id'">
                 
                 <img src="~/@player.Image">
 
