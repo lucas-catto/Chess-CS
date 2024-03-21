@@ -49,3 +49,24 @@ main #s2 .data {
     font-size:        17pt;
     color:            var(--defaultWhite);
 }
+
+main #s2 .data .activity {
+    margin:           10px 0 0 0;
+    padding:          4px;
+    width:            100%;
+    max-width:        400px;
+    border:           2px solid var(--defaultWhite);
+    border-radius:    8px;
+    display:          flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:        wrap;
+    gap:              4px;
+}
+
+main #s2 .data .activity p {
+    padding:          4px 6px;
+    font-size:        22px;
+    font-weight:      400;
+    border:           1px solid var(--defaultWhite);
+}
