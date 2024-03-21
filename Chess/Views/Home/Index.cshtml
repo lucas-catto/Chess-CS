@@ -9,12 +9,13 @@
 
 <head>
      <link rel="stylesheet" href="~/css/Index/index.css">
+     <script src="~/js/Index/Filter/filter.js" defer></script>
 </head>
 
 <section id="s1">
     <p id="all">All</p>
     @foreach (var year in years) {
-        <p style="background-color:@year.Color;">@year.Year's</p>
+        <p class="year-btn" style="background-color:@year.Color;" onClick="filter('@year.Year')">@year.Year's</p>
     }
 </section>
 
