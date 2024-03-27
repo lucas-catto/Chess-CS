@@ -58,8 +58,8 @@ main #s2 .data .activity {
     border:           2px solid var(--defaultWhite);
     border-radius:    8px;
     display:          flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:  center;
+    align-items:      center;
     flex-wrap:        wrap;
     gap:              4px;
 }
@@ -69,4 +69,12 @@ main #s2 .data .activity p {
     font-size:        22px;
     font-weight:      400;
     border:           1px solid var(--defaultWhite);
+}
+
+
+@media screen and (max-width: 1024px) {
+    main #s2 {
+        padding:          0 10px;
+        flex-direction:   column;
+    }
 }
